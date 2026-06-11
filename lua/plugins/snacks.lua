@@ -6,5 +6,10 @@ return {
         height = 0.2,
       },
     },
+    lazygit = {
+      win = {
+        height = 0.8,
+      },
+    },
   },
 }
