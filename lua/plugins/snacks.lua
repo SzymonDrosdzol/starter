@@ -11,5 +11,8 @@ return {
         height = 0.8,
       },
     },
+    explorer = {
+      trash = false,
+    },
   },
 }
