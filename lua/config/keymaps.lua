@@ -14,3 +14,10 @@ vim.keymap.set("n", "<leader>yr", function()
   vim.fn.setreg("+", path)
   vim.notify(path)
 end, { desc = "Yank project-relative file path" })
+
+local search_scope = require("util.search_scope")
+
+vim.keymap.set("n", "<leader>sg", search_scope.grep, { desc = "Grep (Search Scope)" })
+vim.keymap.set("n", "<leader>sF", search_scope.set, { desc = "Set Search Scope" })
+vim.keymap.set("n", "<leader>sS", search_scope.show, { desc = "Show Search Scope" })
+vim.keymap.set("n", "<leader>sX", search_scope.clear, { desc = "Clear Search Scope" })
